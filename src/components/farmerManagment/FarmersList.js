@@ -10,39 +10,39 @@ export default function FarmersList({ farmers, refresh, onEdit, onDelete }) {
     );
 
   return (
-    <div className="overflow-x-auto rounded-xl  bg-white shadow-md">
-      <table className="w-full min-w-[600px] text-sm">
-        <thead className="bg-[#F5F5F5] text-gray-700 uppercase text-xs font-semibold tracking-wide">
+    <div className="overflow-x-auto rounded-xl bg-white shadow-md">
+      <table className="w-full min-w-[600px] text-sm rounded-xl overflow-hidden">
+        <thead className="bg-[#f9fafb] text-gray-800 text-[13px] font-semibold uppercase tracking-wide border-b border-gray-200">
           <tr>
-            <th className="p-4 text-left">Full Name</th>
-            <th className="p-4 text-left">Email</th>
-            <th className="p-4 text-left">Role</th>
-            <th className="p-4 text-center">Actions</th>
+            <th className="p-5 text-left">Full Name</th>
+            <th className="p-5 text-left">Email</th>
+            <th className="p-5 text-left">Role</th>
+            <th className="p-5 text-center">Actions</th>
           </tr>
         </thead>
         <tbody>
           {farmers.map((farmer) => (
             <tr
               key={farmer._id}
-              className="border-b hover:bg-gray-50 transition-colors duration-200"
+              className="border-b border-gray-100 hover:bg-gray-50 transition duration-150"
             >
-              <td className="p-4 font-medium text-gray-900 whitespace-nowrap">
+              <td className="p-5 font-medium text-gray-900 whitespace-nowrap">
                 {farmer.firstName} {farmer.lastName}
               </td>
-              <td className="p-4 text-gray-600">{farmer.email}</td>
-              <td className="p-4 capitalize text-gray-600">{farmer.role}</td>
-              <td className="p-4">
-                <div className="flex justify-center gap-2">
+              <td className="p-5 text-gray-600">{farmer.email}</td>
+              <td className="p-5 capitalize text-gray-600">{farmer.role}</td>
+              <td className="p-5">
+                <div className="flex justify-center gap-3">
                   <button
                     onClick={() => onEdit(farmer)}
-                    className="flex items-center gap-1 px-3 py-1 rounded-md bg-[#0575E6] hover:bg-[#045cd1] text-white transition-colors text-xs font-medium"
+                    className="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#0575E6] hover:bg-[#045cd1] text-white transition text-xs font-semibold shadow-sm"
                   >
                     <Pencil size={16} />
                     <span className="hidden md:inline">Edit</span>
                   </button>
                   <button
                     onClick={() => onDelete(farmer._id)}
-                    className="flex items-center gap-1 px-3 py-1 rounded-md bg-red-600 hover:bg-red-700 text-white transition-colors text-xs font-medium"
+                    className="flex items-center gap-2 px-4 py-2 rounded-lg bg-red-600 hover:bg-red-700 text-white transition text-xs font-semibold shadow-sm"
                   >
                     <Trash2 size={16} />
                     <span className="hidden md:inline">Delete</span>

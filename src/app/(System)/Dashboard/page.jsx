@@ -9,7 +9,7 @@ function page() {
     <main className='p-6 '>
         <div className='pb-4 flex justify-between '>
             <div> 
-            <div className='text-4xl flex items-center space-x-1 font-bold'><LayoutDashboard className='text-2xl text-blue-600' /> <span>Dashbaord</span></div>
+            <div className='text-4xl flex items-center space-x-1 font-bold'><span>Dashbaord</span></div>
 <p>Monitor your aquaculture operations</p>
 </div>
 <div className=' flex space-x-2'>
@@ -17,8 +17,8 @@ function page() {
 <h1 className='text-green-500 flex '> <span>Live</span><Dot className='text-3xl' /></h1>
 </div>
 </div>
-<SummaryCards healthy="27°C" total="7.4" critical="6.8mg/L" warning="15kg" />
-<div className='flex flex-row-reverse'>
+<SummaryCards healthy="203" total="255" critical="5" warning="32" />
+<div className='flex justify-between w-full flex-row-reverse'>
 <RecentAlerts/>
 <PondOverview/>
 </div>

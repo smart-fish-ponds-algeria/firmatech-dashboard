@@ -89,7 +89,7 @@ export default function PondDashboard() {
         ))}
       </nav>
 
-      {activeTab === "Real-Time Status" && <WaterQualityDashboard />}
+      {activeTab === "Real-Time Status" && <WaterQualityDashboard tankId={id} />}
       {activeTab === "Environmental" && <EnvironmentalParameters />}
       {activeTab === "AI Fish Health" && <FishAnalysisDashboard />}
       {activeTab === "Alerts & Timeline" && <LiveAlertTimeline />}
