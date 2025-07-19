@@ -29,7 +29,7 @@ This project was built in just **3 days** during the **Junction Hackathon**, org
 
 ✅ **Multi-Pond Management** — Monitor and manage multiple ponds with individual detailed dashboards.
 
-✅ **User Role Management** — Admins can manage farmers, supervisors, and access permissions.
+✅ **User Role Management** — Admins can manage farmers and access permissions.
 
 ✅ **Secure Authentication** — Login system using **NextAuth** (credentials, Google OAuth), with **MongoDB** as the main database.
 
