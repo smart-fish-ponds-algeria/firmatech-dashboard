@@ -43,10 +43,103 @@ This project was built in just **3 days** during the **Junction Hackathon**, org
 - NextAuth (Authentication)
 - MongoDB + Mongoose (Database)
 - REST API (Next.js Route Handlers)
-- Zustand (State Management)
-- Axios (API Calls)
+
+
+## 📁 Project Structure
+
+```
+
+.
+├── app/                  # Next.js App Router (pages, dashboards)
+├── components/           # Reusable UI components
+├── lib/                  # Mongoose database connection, helpers
+├── models/               # MongoDB Models (Ponds, Users, Feeds, Alerts)
+├── public/               # Static assets (images, icons)
+├── styles/               # Tailwind configuration
+├── .env.local            # Environment variables (MongoDB URI, NextAuth secrets)
+└── package.json          # Project metadata and scripts
+
+````
+
+
+
+## 👥 Team
+
+| Name                    | Role                       |
+| ----------------------- | -------------------------- |
+| **Benabdallah Souhaib** | Admin Dashboard UI/UX + Frontend |
+| **Marya**               | UI/UX Design               |
+| **Younes**              | Backend API Development    |
+| **Riyad Allali**        | Database & API Integration |
+| **Ounis Samir Akram**   | AI Module & Data Analytics |
 
 ---
 
-## 📁 Project Structure
+## 🧑‍💻 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/smart-fish-ponds-algeria/firmatech-Dashboard.git
+cd FirmaTech-Admin-Dashboard
+````
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Setup Environment Variables
+
+Create a `.env.local` file:
+
+```bash
+MONGODB_URI=your_mongodb_connection_string
+NEXTAUTH_SECRET=your_nextauth_secret
+NEXTAUTH_URL=http://localhost:3000
+```
+
+### 4. Run the development server
+
+```bash
+npm run dev
+```
+
+Access on [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 🔐 Authentication & Roles
+
+* **NextAuth** handles login via credentials & Google OAuth.
+* **Role-based access control** (Admin, Supervisor, Farmer) via MongoDB user roles.
+* Fully customizable roles in `models/User.js`.
+
+---
+
+## 📢 Alerts System
+
+* **Real-time alert system** via custom API notifications (email or dashboard alerts).
+* Alerts on low oxygen, high temperature, feeding issues, etc.
+
+---
+
+## 🛠 Built With
+
+* [Next.js](https://nextjs.org/)
+* [TailwindCSS](https://tailwindcss.com/)
+* [NextAuth](https://next-auth.js.org/)
+* [MongoDB](https://www.mongodb.com/)
+* [Chart.js](https://www.chartjs.org/)
+* [Zustand](https://zustand-demo.pmnd.rs/)
+* [Axios](https://axios-http.com/)
+
+---
+
+## 📄 License
+
+MIT © 2025 FirmaTech Admin Team
+
+
 
