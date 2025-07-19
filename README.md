@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <img src="public/Group 1171274914.png" width="400" />
+</p>
 
-## Getting Started
+# 🖥️ FirmaTech — Smart Aquaculture Admin Dashboard
 
-First, run the development server:
+### 🚀 Built at Junction Hackathon (Club CELEC) — 3-Day Challenge
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+FirmaTech Admin Dashboard is a **web-based control panel** designed to help aquaculture managers:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 📊 Monitor ponds in real-time
+- 🐟 Oversee AI-powered fish health analytics
+- 🍽️ Manage feeding operations remotely
+- 🔒 Control access with multi-role authentication
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+This project was built in just **3 days** during the **Junction Hackathon**, organized by **Club CELEC**, with a mission to **digitize and streamline aquaculture operations** for administrators.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🎯 Features
 
-To learn more about Next.js, take a look at the following resources:
+✅ **Real-Time Pond Monitoring** — Track temperature, oxygen, pH, fish count, and other live metrics across ponds.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+✅ **AI Health Insights** — Detect unusual fish behaviors and growth trends using integrated AI modules.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+✅ **Feeding Control & Scheduling** — Start/stop feeding remotely, adjust schedules, and view feeding history.
 
-## Deploy on Vercel
+✅ **Alerts & Notifications** — Instant alerts on critical events like oxygen drops or abnormal temperatures.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+✅ **Multi-Pond Management** — Monitor and manage multiple ponds with individual detailed dashboards.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+✅ **User Role Management** — Admins can manage farmers, supervisors, and access permissions.
+
+✅ **Secure Authentication** — Login system using **NextAuth** (credentials, Google OAuth), with **MongoDB** as the main database.
+
+---
+
+## 💻 Tech Stack
+
+- Next.js (React Framework)
+- TailwindCSS (UI Styling)
+- Chart.js (Data Visualization)
+- NextAuth (Authentication)
+- MongoDB + Mongoose (Database)
+- REST API (Next.js Route Handlers)
+- Zustand (State Management)
+- Axios (API Calls)
+
+---
+
+## 📁 Project Structure
+
